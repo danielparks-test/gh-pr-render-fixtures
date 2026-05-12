@@ -16,14 +16,9 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 
-def power(a: float, b: int) -> float:
-    result = 1.0
-    for _ in range(b):
-        result *= a
-    return result
+def power(base: float, exponent: int) -> float:
+    return base ** exponent
 
 
-def modulo(a: float, b: float) -> float:
-    while a >= b:
-        a -= b
-    return a
+def modulo(dividend: float, divisor: float) -> float:
+    return dividend % divisor
